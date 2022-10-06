@@ -1,19 +1,37 @@
 .home-page {
+    .hero-text-zone {
+        position: absolute;
+        left: 10%;
+        top: 25%;
+        transform: translateY(-50%);
+        width: 80%;
+        max-height: 90%;
+    }
+
+    .hero-text-caption {
+        position:absolute;
+        right: 10%;
+        color:#FFFF;
+        font-family: "la Bella Aurore";
+        font-size: 20px;
+
+    }
+
     .text-zone {
         position: absolute;
         left: 10%;
-        top: 50%;
+        top: 60%;
         transform: translateY(-50%);
         width: 40%;
         max-height: 90%;
     }
 
     h1 {
-        color: #fff;
-        font-size: 53px;
+        color: #15315A;
+        font-size: 100px;
         margin: 0;
         font: 'Coolvetica';
-        font-weight: 400;
+        font-weight: 600;
 
         &::before {
             content: '<h1>';
@@ -38,25 +56,17 @@
             opacity:0.6;
 
         }
-
-        img{
-            width: 32px;
-            margin-left: 20px;
-            opacity: 0;
-            height:auto;
-            animation: rotateIn 1s linear both;
-            animation-delay: 1.4s;
-        }
     }
 
     h2 {
-        color: #8d8d8d;
+        color: #A1B1D0;
         margin: 20px;
         font-weight: 400;
         font-size: 11px;
         font-family: sans-serif;
         letter-spacing: 3px;
         animation: fadeIin 1s 1.8s backwards;
+      
     }
 
     .flat-button {
@@ -70,6 +80,25 @@
         border: 1px solid #ffd700;
         margin-top: 25px;
         float: left;
-        animation: fadeInAnimation 1s 1.8s backwards;
+        animation: fadeIn1s 1.8s backwards;
+        white-space: nowrap;
+
+        &:hover {
+            background:#ffd700;
+            color: #333
+        }
+    }
+
+    .section-heading {
+        position: absolute;
+        left: 10%;
+        color: #A1B1D0;
+        margin: 20px;
+        font-weight: 400;
+        font-size: 40px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        top: 70%;
+        
     }
 }

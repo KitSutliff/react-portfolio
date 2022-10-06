@@ -1,7 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import'./index.scss'
 import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin,faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faEnvelope, faSuitcase, faBars, faClose } from '@fortawesome/free-solid-svg-icons'
@@ -9,19 +8,15 @@ import { faHome, faUser, faEnvelope, faSuitcase, faBars, faClose } from '@fortaw
 
 const Sidebar = () => (
     <div className='nav-bar'>
-        <Link className='logo' to='/'>
-            <img src={LogoS} alt="logo" />
-            <img className ="sub-logo" src={LogoSubtitle} alt="slobodan" />
-        </Link>
         <nav>
             <NavLink exact= "true" activeclassname= "active" to="/">
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
             </NavLink>
             <NavLink exact= "true" activeclassname= "active" className="about-link" to="/about">
-                <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+                <FontAwesomeIcon icon={faUser} color="#A1B1D0" opacity=".4"/>
             </NavLink>
             <NavLink exact= "true" activeclassname= "active" className="contact-link" to="/contact">
-                <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+                <FontAwesomeIcon icon={faEnvelope} color="#A1B1D0" opacity=".4"/>
             </NavLink>
         </nav>
         <ul>
@@ -31,7 +26,7 @@ const Sidebar = () => (
                     rel="noreferrer"
                     href="https://www.linkedin.com/in/kit-sutliff/"
                 >
-                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faLinkedin} color="#A1B1D0" opacity=".4"/>
                 </a>
             </li>
             <li>
@@ -40,7 +35,7 @@ const Sidebar = () => (
                     rel="noreferrer"
                     href="https://github.com/KitSutliff"
                 >
-                    <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faGithub} color="#A1B1D0" opacity=".4"/>
                 </a>
             </li>
         </ul>

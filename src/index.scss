@@ -1,0 +1,133 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color:  #626192;
+
+  .container {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    
+    section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      flex: none;
+      scroll-snap-align: start;
+
+// LANDING PAGE
+
+      &:nth-of-type(1) {
+        color: #FFFF;
+  
+        h1 {
+          color: #15315A;
+          font-size: 100px;
+          margin: 0;
+          font: 'Coolvetica';
+          font-weight: 600;
+         
+          &::before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color:  #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -18px;
+            // margin-right: 20px;
+            opacity:0.6;
+            animation: fadeIn 1s 1.7s backwards;
+          }
+  
+          &::after {
+            content: '<h1/>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: 72px;
+            margin-left: 14px;
+            opacity:0.6;
+            animation: fadeIn 1s 1.7s backwards;
+          }
+        }
+
+        h2 {
+          color: #ffd700;
+          font-size: 13px;
+          font-weight: 400;
+          letter-spacing: 4px;
+          font-family: sans-serif;
+        }
+  
+        h3 {
+          color: #A1B1D0;
+          margin: 20px;
+          font-weight: 400;
+          font-size: 11px;
+          font-family: sans-serif;
+          letter-spacing: 3px;
+          animation: fadeIin 1s 1.8s backwards;
+        }
+    
+        h4 {
+          color: #ffd700;
+          font-size: 13px;
+          font-weight: 400;
+          letter-spacing: 4px;
+          font-family: sans-serif;
+          text-decoration: none;
+          padding: 10px 18px;
+          border: 1px solid #ffd700;
+          margin-top: 25px;
+          float: left;
+          animation: fadeIn1s 1.8s backwards;
+          white-space: nowrap;
+
+          &:hover {
+              background:#ffd700;
+              color: #333
+          }
+        }
+      }
+
+// PROFESSIONAL
+
+      &:nth-of-type(2) {
+        background-color: #626192;
+        color:   #A1B1D0;
+      }
+
+// PERSONAL
+
+      &:nth-of-type(3) {
+        background-color:  #A1B1D0;
+        color: #626192;
+      }
+
+// Bona Fides
+
+      &:nth-of-type(4) {
+        background-color: #626192;
+        color:   #A1B1D0;
+      }
+
+// Contact
+
+      &:nth-of-type(5) {
+        background-color:  #A1B1D0;
+        color: #626192;
+        
+      }
+
+      h1 {
+        font-family: arial;
+        font-size: 15em;
+      }
+    }
+  }
+}
