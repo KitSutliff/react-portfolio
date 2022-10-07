@@ -67,12 +67,13 @@ body {
   
         h3 {
           color: #A1B1D0;
+          text-align: center;
           font-weight: 400;
           font-size: 11px;
           font-family: sans-serif;
           letter-spacing: 3px;
           animation: fadeIin 1s 1.8s backwards;
-          margin-left: 63%;
+          margin-left: 55%;
           margin-top: 60px;
         }
     
@@ -89,7 +90,7 @@ body {
           float: left;
           animation: fadeIn1s 1.8s backwards;
           white-space: nowrap;
-          margin-left: 63%;
+          margin-left: 64%;
 
           &:hover {
               background:#ffd700;
