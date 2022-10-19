@@ -18,18 +18,28 @@ body {
       height: 100vh;
       flex: none;
       scroll-snap-align: start;
+      
+    //.global headings, etc
 
 // LANDING PAGE
 
       &:nth-of-type(1) {
         color: #FFFF;
-  
+        
+        // .section-heading {
+        //   margin-left: 40px;
+        //   font-size: 200;
+        //   color:yellow;
+          
+        // }
+
         h1 {
           color: #15315A;
           font-size: 100px;
           margin: 0;
           font: 'Coolvetica';
           font-weight: 600;
+          
          
           &::before {
             content: '<h1>';
@@ -111,6 +121,7 @@ body {
       &:nth-of-type(3) {
         background-color:  #A1B1D0;
         color: #626192;
+
       }
 
 // Bona Fides
