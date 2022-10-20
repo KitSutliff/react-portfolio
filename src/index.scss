@@ -21,6 +21,22 @@ body {
       
     //.global headings, etc
 
+    .section-heading {
+        justify-content: left;
+        margin-left: -30vw;
+        margin-top:-40vh;
+        font-size: 50px;
+        color:   #A1B1D0;
+      }
+
+    .heading-underline {
+      justify-content: left;
+      margin-left: -30vw;
+      height: 5px;
+      width: 700px;
+      background-color: #A1B1D0;
+    }
+
 // LANDING PAGE
 
       &:nth-of-type(1) {
@@ -119,16 +135,13 @@ body {
 // PERSONAL
 
       &:nth-of-type(3) {
-        background-color:  #A1B1D0;
-        color: #626192;
-
+        background-color:  #626192;
       }
 
 // Bona Fides
 
       &:nth-of-type(4) {
         background-color: #626192;
-        color:   #A1B1D0;
       }
 
 // Contact
