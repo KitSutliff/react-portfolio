@@ -1,16 +1,15 @@
 import Sidebar from '../Sidebar'
 import './index.scss';
+import Content from '../Content'
 
 const Layout = () => {
     return (
         <div className = "App">
             <Sidebar />
+          
             <div className='page'>
-                <span className='tags top-tags'>&lt;body&gt;</span>
-                <span className='tags bottom-tags'>
-                &lt;/body&gt;
-                <span className='bottom-tag-html'>&lt;</span>
-                </span>
+                <Content />
+      
             </div>
         </div>
     )
