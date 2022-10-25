@@ -1,7 +1,14 @@
+
+import Welcome from './Welcome'
+
 const Content = () => {
     return (
-        <div>'Test'
+        // <div>'Test'
+        // </div>
+        <div className="page">
+            <Welcome />
         </div>
+       
     )
 }
 

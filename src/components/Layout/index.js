@@ -5,9 +5,10 @@ import Content from '../Content'
 const Layout = () => {
     return (
         <div className = "App">
-            <Sidebar />
+        {/* <Sidebar /> */}
           
             <div className='page'>
+                <Sidebar /> 
                 <Content />
       
             </div>
