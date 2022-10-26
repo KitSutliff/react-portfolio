@@ -4,13 +4,10 @@ import Content from '../Content'
 
 const Layout = () => {
     return (
-        <div className = "App">
-        {/* <Sidebar /> */}
-          
+        <div className = "App">  
             <div className='page'>
                 <Sidebar /> 
                 <Content />
-      
             </div>
         </div>
     )

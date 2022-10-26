@@ -1,12 +1,18 @@
 
 import Welcome from './Welcome'
+import Professional from './Professional'
+import Personal from './Personal'
+import BonaFides from './BonaFides'
+
 
 const Content = () => {
     return (
-        // <div>'Test'
-        // </div>
-        <div className="page">
+
+        <div className="container">
             <Welcome />
+            <Professional />
+            <Personal />
+            <BonaFides />
         </div>
        
     )
