@@ -10,7 +10,6 @@ import Contact from './Contact'
 const Content = () => {
     return (
 
-        
         <div className="container">
             <Welcome />
             <Professional />

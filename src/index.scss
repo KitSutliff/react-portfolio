@@ -19,9 +19,11 @@ body {
       flex: none;
       scroll-snap-align: start;
       
-    //.global headings, etc
+    // .global headings, etc
 
-    .section-heading {
+    .container-headings {
+    
+      .section-heading {
         justify-content: left;
         margin-left: -30vw;
         margin-top:-40vh;
@@ -29,12 +31,23 @@ body {
         color:   #A1B1D0;
       }
 
-    .heading-underline {
-      justify-content: left;
-      margin-left: -30vw;
-      height: 5px;
-      width: 700px;
-      background-color: #A1B1D0;
+      .heading-underline {
+        justify-content: left;
+        margin-left: -30vw;
+        height: 5px;
+        width: 700px;
+        background-color: #A1B1D0;
+      }
+
+      .section-subheading {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        margin-top: 2vw;
+        margin-left: -25vw;
+      }
     }
 
 // LANDING PAGE

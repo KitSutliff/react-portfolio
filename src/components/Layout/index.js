@@ -6,7 +6,7 @@ const Layout = () => {
     return (
         <div className = "App">  
             <div className='page'>
-                <Sidebar /> 
+                {/* <Sidebar />  */}
                 <Content />
             </div>
         </div>
