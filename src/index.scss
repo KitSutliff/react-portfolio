@@ -20,6 +20,7 @@ body {
       
     // .global headings, etc
     .section-container {}
+
     .container-headings {
       background: pink;
       
@@ -45,16 +46,48 @@ body {
     }
 
     .container-section-content {
-      border:1px;
-      color: pink;
+      display:flex;
+      align-items:center;
+      justify-content: space-evenly;
+      color: black;
+      margin-top: 30px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      
 
-      .left-to-bottom {
-        color: #fff;
-        width: 200px;
-        height: 200px;
+      @media (max-width: 800px) {
+          flex-direction: column-reverse;
       }
 
-      .right-to-top {}
+      .left-to-bottom {
+        background-color: #fff;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        > div {
+          background-color: pink;
+          padding-left:24px;
+          }
+          
+        
+        
+      }
+
+      .right-to-top {
+        background-color: pink;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        > div > img {
+          max-width: 400px;
+          }
+      
+      }
 
     }
 
