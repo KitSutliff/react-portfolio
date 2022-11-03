@@ -13,41 +13,49 @@ body {
     section{
       display: flex;
       justify-content: center;
-      align-items: center;
       width: 100vw;
       height: 100vh;
       flex: none;
       scroll-snap-align: start;
       
     // .global headings, etc
-
+    .section-container {}
     .container-headings {
-    
+      background: pink;
+      
       .section-heading {
         justify-content: left;
-        margin-left: -30vw;
-        margin-top:-40vh;
         font-size: 50px;
         color:   #A1B1D0;
       }
 
       .heading-underline {
-        justify-content: left;
-        margin-left: -30vw;
         height: 5px;
-        width: 700px;
+        width: 100vw;
         background-color: #A1B1D0;
       }
 
       .section-subheading {
         color: #fff;
         font-size: 24px;
-        font-weight: 400;
         letter-spacing: 4px;
         font-family: sans-serif;
         margin-top: 2vw;
-        margin-left: -25vw;
       }
+    }
+
+    .container-section-content {
+      border:1px;
+      color: pink;
+
+      .left-to-bottom {
+        color: #fff;
+        width: 200px;
+        height: 200px;
+      }
+
+      .right-to-top {}
+
     }
 
 // LANDING PAGE
@@ -59,7 +67,7 @@ body {
         h1 {
           color: #15315A;
           font-size: 100px;
-          margin: 0;
+          margin-top: 10vw;
           font: 'Coolvetica';
           font-weight: 600;
           
@@ -71,7 +79,6 @@ body {
             font-size: 18px;
             position: absolute;
             margin-top: -18px;
-            // margin-right: 20px;
             opacity:0.6;
             animation: fadeIn 1s 1.7s backwards;
           }
@@ -95,7 +102,8 @@ body {
           font-weight: 400;
           letter-spacing: 4px;
           font-family: sans-serif;
-          margin-left: 55%
+          margin-left: 55%;
+          // margin-top: 10vw;
         }
   
         .intro-bio {
