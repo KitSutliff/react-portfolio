@@ -10,14 +10,30 @@ const Personal = () => {
                 <div className="container-section-content">
                     <div className="left-to-bottom">
                         <div>
-                            <h3>Azure Biller</h3>
+                            <h3>"Welcome to the Jungle"</h3>
                             <p> Retro-style pixel art game built in <span className="bold">Python</span> to entertain and impress people like <span className="bold">you</span>.
                             </p>
                             <p >Design showcases <span className="bold">efficient</span> use of creative assets and <span className="bold">clean code</span> to maximum effect.</p>
                         </div>
                     </div>
                     <div className="right-to-top">
-                        <div className="confidential-box"> UNDER CONSTRUCTION
+                        <div >
+                            <img src="http://localhost:3000/GameIntro.png" alt="billing page image">
+                            </img>
+                        </div>
+                    </div>
+                </div>
+                <div className="container-section-content">
+                    <div className="left-to-bottom">
+                        <div>
+
+                            <p >This project is being developed using <span className="bold">Pygame</span> so that the ultimate product will be able to showcase my <span className="bold">profficiency</span> with Python.</p>
+                        </div>
+                    </div>
+                    <div className="right-to-top">
+                        <div >
+                            <img src="http://localhost:3000/GameAction.png" alt="billing page image">
+                            </img>
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,6 @@ body {
     height: 100%;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-   
 
     section{
       display: flex;
@@ -17,11 +16,6 @@ body {
       width: 100vw;
       flex: none;
       scroll-snap-align: start;
-   
-      //figure out how to base heigth on content, not view height
-      // 1) block out all content
-      // 2) set height to auto
-      // 3) add divs as needed for spacing
       
     .container-headings {
       background:  #626192;
@@ -79,7 +73,6 @@ body {
           background-color:  #626192;
           padding-left:24px;
           }
-    
       }
 
       .right-to-top {
@@ -97,6 +90,18 @@ body {
           display: flex;
           align-items: center;
           justify-content: center;
+        }
+        .container-links{
+          width:400px;
+          height:250px;
+          background-color: #626192;
+          text-align: center;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 1.6em;
+
         }
         > div > img {
           max-width: 400px;
