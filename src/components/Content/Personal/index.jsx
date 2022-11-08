@@ -17,9 +17,7 @@ const Personal = () => {
                         </div>
                     </div>
                     <div className="right-to-top">
-                        <div>
-                            <img src="http://localhost:3000/QumuloBiller.png" alt="billing page image">
-                            </img>
+                        <div className="confidential-box"> UNDER CONSTRUCTION
                         </div>
                     </div>
                 </div>
