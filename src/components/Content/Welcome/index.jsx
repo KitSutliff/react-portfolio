@@ -10,9 +10,18 @@ const Welcome = () => {
                     <h2>It's a pleasure to meet you.</h2>
                 </div>
                 <div>
-                    <div className='intro-bio'> My name is <br /> Kit Sutliff<br /><br />
-                    Full Stack Developer <br /> Python / Javascript</div>
-                    <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                    <div className='intro-bio'> My name is <br />
+                        <span className="bold">
+                        Kit Sutliff
+                        </span> 
+                        <br /><br />
+                    Full Stack Developer <br />  <span className="bold">
+                        Python / Javascript
+                        </span> 
+                    </div>
+                    <div className="centered">
+                        <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                    </div>
                 </div>
             </div>
       </section>

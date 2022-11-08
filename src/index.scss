@@ -9,24 +9,27 @@ body {
     height: 100%;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    
+   
+
     section{
       display: flex;
       justify-content: center;
       width: 100vw;
-      height: 100vh;
       flex: none;
       scroll-snap-align: start;
+   
+      //figure out how to base heigth on content, not view height
+      // 1) block out all content
+      // 2) set height to auto
+      // 3) add divs as needed for spacing
       
-    // .global headings, etc
-    .section-container {}
-
     .container-headings {
-      background: pink;
+      background:  #626192;
       
       .section-heading {
         justify-content: left;
         font-size: 50px;
+        margin-left: 10px;
         color:   #A1B1D0;
       }
 
@@ -42,6 +45,7 @@ body {
         letter-spacing: 4px;
         font-family: sans-serif;
         margin-top: 2vw;
+        margin-left: 30px;
       }
     }
 
@@ -49,40 +53,51 @@ body {
       display:flex;
       align-items:center;
       justify-content: space-evenly;
-      color: black;
+      color: #15315A;
       margin-top: 30px;
       max-width: 900px;
       margin-left: auto;
       margin-right: auto;
-      
-
       @media (max-width: 800px) {
           flex-direction: column-reverse;
       }
 
       .left-to-bottom {
-        background-color: #fff;
+        background-color:  #626192;
+        color: white;
         width: 400px;
-        height: 400px;
+        height: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        line-height: 1.6em;
+        .bold{
+          font-weight: bold;
+        }
         > div {
-          background-color: pink;
+          background-color:  #626192;
           padding-left:24px;
           }
-          
-        
-        
+    
       }
 
       .right-to-top {
-        background-color: pink;
+        background-color:  #626192;
         width: 400px;
-        height: 400px;
+        height: 250px;
         display: flex;
         align-items: center;
+        .confidential-box {
+          width:400px;
+          height:250px;
+          background-color:#15315A;;
+          text-align: center;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
         > div > img {
           max-width: 400px;
           }
@@ -94,16 +109,26 @@ body {
 // LANDING PAGE
 
       &:nth-of-type(1) {
-        color: #FFFF;
+        height: 100vh;
+        @media (max-width: 700px) {
+          min-height: 800px;
+        }
+
 
 
         h1 {
           color: #15315A;
           font-size: 100px;
           margin-top: 10vw;
+          margin-bottom: 0;
           font: 'Coolvetica';
-          font-weight: 600;
-          
+          font-weight: 700;
+          @media (max-width: 700px) {
+            text-align: center;
+            margin-left: 0;
+          } 
+        
+  
          
           &::before {
             content: '<h1>';
@@ -136,7 +161,19 @@ body {
           letter-spacing: 4px;
           font-family: sans-serif;
           margin-left: 55%;
-          // margin-top: 10vw;
+          margin-bottom: 100px;
+          @media (max-width: 700px) {
+            text-align: center;
+            margin-left: 0;
+          }
+  
+        }
+
+        .centered {
+          margin-top: 100px;
+          @media (max-width: 700px) {
+            text-align: center;
+          } 
         }
   
         .intro-bio {
@@ -149,8 +186,17 @@ body {
           animation: fadeIin 1s 1.8s backwards;
           margin-left: 55%;
           margin-top: 60px;
+          line-height: 1.6em;
+          .bold{
+            font-weight: bold;
+            color: white;
+          }
+          @media (max-width: 700px) {
+            text-align: center;
+            margin-left: 0;
+          } 
         }
-    
+
         .flat-button {
           color: #ffd700;
           font-size: 13px;
@@ -161,10 +207,13 @@ body {
           padding: 10px 18px;
           border: 1px solid #ffd700;
           margin-top: 20px;
-          float: left;
           animation: fadeIn1s 1.8s backwards;
           white-space: nowrap;
           margin-left: 64%;
+          @media (max-width: 700px) {
+            margin-left: auto;
+            margin-right: auto;
+          } 
 
           &:hover {
               background:#ffd700;
@@ -176,20 +225,32 @@ body {
 // PROFESSIONAL
 
       &:nth-of-type(2) {
+        height: 100vh;
         background-color: #626192;
         color:   #A1B1D0;
+        @media (max-width: 700px) {
+          min-height: 1200px;
+        }
+     
       }
 
 // PERSONAL
 
       &:nth-of-type(3) {
         background-color:  #626192;
+        height:100vh;
+        @media (max-width: 700px) {
+          min-height: 800px;
+        }
       }
 
 // Bona Fides
 
       &:nth-of-type(4) {
         background-color: #626192;
+        @media (max-width: 700px) {
+          min-height: 800px;
+        }
       }
 
 // Contact
@@ -197,12 +258,12 @@ body {
       &:nth-of-type(5) {
         background-color:  #A1B1D0;
         color: #626192;
-        
-      }
 
-      h1 {
-        font-family: arial;
-        font-size: 15em;
+        height: 100vh;
+        @media (max-width: 700px) {
+          min-height: 800px;
+        }
+        
       }
     }
   }
