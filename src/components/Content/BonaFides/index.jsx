@@ -12,7 +12,7 @@ const BonaFides = () => {
                         <div>
                             <p> Passionate about solving<span className="bold"> complex</span> and <span className="bold">ambiguous</span> challenges.
                             </p>
-                            <p >Enjoys <span className="bold">Star Trek</span> use of creative assets and <span className="bold">Lego</span>.</p>
+                            <p >Enjoys <span className="bold">Star Trek</span> and <span className="bold">Lego</span>.</p>
                         </div>
                     </div>
                     <div className="right-to-top">
