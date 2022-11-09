@@ -16,10 +16,12 @@ const BonaFides = () => {
                         </div>
                     </div>
                     <div className="right-to-top">
-                    <div className="container-links"> LinkedIn <br></br>GitHub <br></br>Resume
+                        <div className="container-links"> LinkedIn <br></br>GitHub <br></br>Resume
                         </div>
-                    </div>
+                    </div> 
                 </div>
+                <div className="container-skills"> <h2>Skills</h2>
+                    </div>
             </div>
         </section>
 
