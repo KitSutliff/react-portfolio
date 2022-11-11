@@ -12,19 +12,19 @@ const Welcome = () => {
                 <div>
                     <div className='intro-bio'> My name is <br />
                         <span className="bold">
-                        Kit Sutliff
-                        </span> 
+                            Kit Sutliff
+                        </span>
                         <br /><br />
-                    Full Stack Developer <br />  <span className="bold">
-                        Python / Javascript
-                        </span> 
+                        Full Stack Developer <br />  <span className="bold">
+                            Python / Javascript
+                        </span>
                     </div>
                     <div className="centered">
-                        <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                        <a href="#contact" className="flat-button">CONTACT ME</a>
                     </div>
                 </div>
             </div>
-      </section>
+        </section>
     )
 }
 

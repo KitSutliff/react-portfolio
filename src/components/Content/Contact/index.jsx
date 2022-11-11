@@ -1,12 +1,15 @@
 
 const Contact = () => {
     return (
-         
         <section>
-        <div>
-        <div class="section-heading">Contact</div>
-        <div class="heading-underline"></div>
-        </div>
+            <div>
+                <div class="container-contact-heading" id="contact">
+                    Contact
+                </div>
+                <div class="heading-underline">
+
+                </div>
+            </div>
         </section>
 
        
