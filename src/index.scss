@@ -1,4 +1,5 @@
 body {
+  scroll-behavior: smooth;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -16,6 +17,15 @@ body {
       width: 100vw;
       flex: none;
       scroll-snap-align: start;
+
+    .container-contact-heading {
+      justify-content: center;
+      font-size: 50px;
+      margin-left: 10px;
+      margin-top: 10px;
+      color:   #626192;
+
+    }
       
     .container-headings {
       background:  #626192;
@@ -98,43 +108,76 @@ body {
           text-align: center;
           color: white;
           display: flex;
+          flex-direction: column;
           align-items: center;
           justify-content: center;
           font-weight: bold;
-          line-height: 2em;
+          line-height: 2.5em;
+          > a {
+            color:  #A1B1D0;
+            text-decoration: none;
+            font-size: 1.5em;
+            &:hover {
+              color: white;
+          }
+
+          }
 
         }
         > div > img {
           max-width: 400px;
-          }
-      
+        }
       }
-      
     }
     
     .container-skills{
       display:flex;
       align-items:center;
+      flex-direction:column;
       justify-content: space-evenly;
       color: white;
       margin-top: 30px;
       max-width: 600px;
       margin-left: auto;
       margin-right: auto;
-      @media (max-width: 800px) {
-          flex-direction: column-reverse;
+      .container-skills-icons {
+        display: flex;
+        flex-direction:row;
+        flex-flow: wrap;
+        align-items: center;
+        width: 600px;
+        justify-content: space-evenly;
+        @media (max-width: 800px) {
+          max-width: 190px;
+          justify-content: space-evenly;
+       
+        }
+        .skill-icon{
+          display:flex;
+          flex-direction: column;
+          text-align: center;
+          height:85px;
+          width: 50px;
+          margin-left: 5px;
+          margin-right: 5px;
+          justify-content: space-between;
+          @media (max-width: 800px) {
+            margin-top: 20px;
+          }
+          
+        }
       }
+
     }
 
 // LANDING PAGE
 
       &:nth-of-type(1) {
         height: 100vh;
+        min-height: 700px;
         @media (max-width: 700px) {
           min-height: 800px;
         }
-
-
 
         h1 {
           color: #15315A;
@@ -275,7 +318,7 @@ body {
         min-height: 900px;
 
         @media (max-width: 700px) {
-          min-height: 800px;
+          min-height: 1200px;
         }
       }
 
