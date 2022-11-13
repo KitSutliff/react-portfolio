@@ -43,11 +43,11 @@ const Contact = () => {
                             </label>
                             <textarea className="form-control" id="message" required />
                         </div>
-
-                        <button className="form-element btn btn-danger" type="submit">
-                            {formStatus}
-                        </button>
-
+                        <div className= "form-element">
+                            <button type="submit">
+                                {formStatus}
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
