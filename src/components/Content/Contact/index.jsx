@@ -1,22 +1,22 @@
 
-import React from 'react'
+import React, { useRef} from 'react'
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
     const [formStatus, setFormStatus] = React.useState('Send')
-    // SOLUTION 2 COMPONENT
-    const onSubmit = (e) => {
-        e.preventDefault()
-        setFormStatus('Submitting...')
-        const { name, email, message } = e.target.elements
-        let conFom = {
-            name: name.value,
-            email: email.value,
-            message: message.value,
-        }
-        console.log(conFom)
+    const form = useRef();
 
-        // ADD EMAIL SUBMISSION COMPONENT HERE
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
 
-    }
     return (
         <section>
             <div className="container-contact-section" >
@@ -24,7 +24,7 @@ const Contact = () => {
                     Contact
                 </div>
                 <div className="container-contact-form">
-                    <form onSubmit={onSubmit}>
+                    <form onSubmit={sendEmail} ref= {form}>
                         <div className="form-element">
                             <label className="form-label" htmlFor="name">
                                 Name 
