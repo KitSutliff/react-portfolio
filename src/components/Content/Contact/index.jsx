@@ -9,8 +9,9 @@ const Contact = () => {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      emailjs.sendForm( process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
         .then((result) => {
+            setFormStatus("Submitted")
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
@@ -20,7 +21,7 @@ const Contact = () => {
     return (
         <section>
             <div className="container-contact-section" >
-                <div class="container-contact-heading" id="contact">
+                <div className="container-contact-heading" id="contact">
                     Contact
                 </div>
                 <div className="container-contact-form">
@@ -29,19 +30,19 @@ const Contact = () => {
                             <label className="form-label" htmlFor="name">
                                 Name 
                             </label>
-                            <input className="form-control" type="text" id="name" required />
+                            <input className="form-control" type="text" name="name" required />
                         </div>
                         <div className='form-element'> 
                             <label className="form-label" htmlFor="email">
                                 Email
                             </label>
-                            <input className="form-control" type="email" id="email" required />
+                            <input className="form-control" type="email" name="email" required />
                         </div>
                         <div className="form-element">
                             <label className="form-label" htmlFor="message">
                                 Message
                             </label>
-                            <textarea className="form-control" id="message" required />
+                            <textarea className="form-control" id="message" name="message" required />
                         </div>
                         <div className= "form-element">
                             <button type="submit">
