@@ -23,29 +23,31 @@ const Contact = () => {
                 <div class="container-contact-heading" id="contact">
                     Contact
                 </div>
-                <div >
+                <div className="container-contact-form">
                     <form onSubmit={onSubmit}>
-                        <div>
+                        <div className="form-element">
                             <label className="form-label" htmlFor="name">
-                                Name
+                                Name 
                             </label>
                             <input className="form-control" type="text" id="name" required />
                         </div>
-                        <div>
+                        <div className='form-element'> 
                             <label className="form-label" htmlFor="email">
                                 Email
                             </label>
                             <input className="form-control" type="email" id="email" required />
                         </div>
-                        <div>
+                        <div className="form-element">
                             <label className="form-label" htmlFor="message">
                                 Message
                             </label>
                             <textarea className="form-control" id="message" required />
                         </div>
-                        <button className="btn btn-danger" type="submit">
+
+                        <button className="form-element btn btn-danger" type="submit">
                             {formStatus}
                         </button>
+
                     </form>
                 </div>
             </div>
