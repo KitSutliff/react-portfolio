@@ -1,3 +1,9 @@
+import Python from '../../../assets/images/Python.png';
+import CSS from '../../../assets/images/CSS.png';
+import HTML from '../../../assets/images/HTML.png';
+import Javascript from '../../../assets/images/Javascript.png';
+import React from '../../../assets/images/React.png';
+
 const BonaFides = () => {
     return (
         <section>
@@ -39,27 +45,27 @@ const BonaFides = () => {
                     <h2>Skills</h2>
                     <div className="container-skills-icons">
                         <div className="skill-icon">
-                            <img src="http://localhost:3000/Python.png" alt="python logo">
+                            <img src={Python} alt="Python logo">
                             </img>
                             Python
                         </div> 
                         <div className="skill-icon">
-                            <img src="http://localhost:3000/HTML.png" alt="python logo">
+                            <img src={HTML} alt="HTML logo">
                             </img>
                             HTML
                         </div> 
                         <div className="skill-icon">
-                            <img src="http://localhost:3000/CSS.png" alt="python logo">
+                            <img src={CSS} alt="CSS logo">
                             </img>
                             CSS
                         </div> 
                         <div className="skill-icon">
-                            <img src="http://localhost:3000/Javascript.png" alt="python logo">
+                            <img src={Javascript} alt="Javascript logo">
                             </img>Javascript
                             {/* fix icons */}
                         </div> 
                         <div className="skill-icon">
-                            <img src="http://localhost:3000/React.png" alt="python logo">
+                            <img src={React} alt="React logo">
                             </img>
                             React
                         </div> 

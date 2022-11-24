@@ -1,3 +1,7 @@
+import GameIntro from '../../../assets/images/GameIntro.png';
+import GameAction from '../../../assets/images/GameAction.png';
+
+
 const Personal = () => {
     return (
         <section>
@@ -18,7 +22,7 @@ const Personal = () => {
                     </div>
                     <div className="right-to-top">
                         <div >
-                            <img src="http://localhost:3000/GameIntro.png" alt="billing page image">
+                            <img src={GameIntro} alt="billing page image">
                             </img>
                         </div>
                     </div>
@@ -32,14 +36,13 @@ const Personal = () => {
                     </div>
                     <div className="right-to-top">
                         <div >
-                            <img src="http://localhost:3000/GameAction.png" alt="billing page image">
+                            <img src={GameAction} alt="billing page image">
                             </img>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     )
 }
 

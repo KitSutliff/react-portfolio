@@ -1,3 +1,5 @@
+import QumuloBillingScreen from '../../../assets/images/QumuloBiller.png';
+
 const Professional = () => {
     return (
         <section>
@@ -18,7 +20,7 @@ const Professional = () => {
                     </div>
                     <div className="right-to-top">
                         <div>
-                            <img src="http://localhost:3000/QumuloBiller.png" alt="billing page image">
+                            <img src={QumuloBillingScreen} alt="billing page image">
                             </img>
                         </div>
                     </div>
