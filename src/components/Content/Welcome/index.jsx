@@ -20,7 +20,16 @@ const Welcome = () => {
                         </span>
                     </div>
                     <div className="centered">
-                        <a href="#contact" className="flat-button">CONTACT ME</a>
+                        <button
+                            onClick={() =>
+                                document
+                                .getElementById("contact")
+                                .scrollIntoView({ behavior: "smooth" })
+                            }
+                            className="flat-button"
+                            >
+                                CONTACT ME
+                        </button>
                     </div>
                 </div>
             </div>
