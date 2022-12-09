@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.e04f28c2.css",
+    "main.js": "/react-portfolio/static/js/main.b33beab9.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/GameIntro.png": "/react-portfolio/static/media/GameIntro.1899e095b70b37b08a5c.png",
+    "static/media/GameAction.png": "/react-portfolio/static/media/GameAction.9f88f07fc942e687278c.png",
+    "static/media/QumuloBiller.png": "/react-portfolio/static/media/QumuloBiller.ce32c49d2bb8604bffc6.png",
+    "static/media/React.png": "/react-portfolio/static/media/React.e8ba66abb9345eb00533.png",
+    "static/media/LaBelleAurore.woff2": "/react-portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/HTML.png": "/react-portfolio/static/media/HTML.325446bbe49e211bc2a6.png",
+    "static/media/Python.png": "/react-portfolio/static/media/Python.e06e9966fce945f43ec8.png",
+    "static/media/CSS.png": "/react-portfolio/static/media/CSS.2ebed8cf656b2ba60d0e.png",
+    "static/media/Javascript.png": "/react-portfolio/static/media/Javascript.76e4acdcec3226a17847.png",
+    "static/media/CoolveticaRg-Regular.woff2": "/react-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/react-portfolio/index.html",
+    "main.e04f28c2.css.map": "/react-portfolio/static/css/main.e04f28c2.css.map",
+    "main.b33beab9.js.map": "/react-portfolio/static/js/main.b33beab9.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e04f28c2.css",
+    "static/js/main.b33beab9.js"
+  ]
+}
